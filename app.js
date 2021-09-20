@@ -8,10 +8,8 @@ function compareValues(sum, luckyNumber) {
     if (sum % luckyNumber == 0){
         outputBox.innerText = "Your birthday is lucky!!🤞";
      
-
     }else{
         outputBox.innerText = "Your Birthday is not lucky!😢";
-    
     }
  
 }
@@ -26,8 +24,6 @@ function checkBirthdayDateIsLucky(){
 
 }
 
-
-
 function calculateSum(dob) {
     dob = dob.replaceAll("-", "");
     let sum = 0;
@@ -35,8 +31,7 @@ function calculateSum(dob) {
     {
     sum = sum + Number(dob.charAt(index));
     }
-    return sum;
-    
+    return sum;   
 }
 
 checkNumberButton.addEventListener('click',checkBirthdayDateIsLucky)
